@@ -114,6 +114,10 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
 .container {
     padding-inline: 2em;
     margin-inline: auto;
@@ -142,6 +146,8 @@ select {
 .text-accent { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
 
+/* typography */
+
 .ff-serif { font-family: var(--ff-serif); } 
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
@@ -168,6 +174,10 @@ select {
 .fs-600 {
     line-height: 1.1;
 }
+
+/* ------------------- */
+/* Regular classes     */
+/* ------------------- */
 
 .numbered-title{
     text-transform: uppercase;
