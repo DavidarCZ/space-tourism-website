@@ -224,3 +224,35 @@ select {
     transform: scale(1.5);
     opacity: 1;
 }
+
+.primary-navigation {
+    --gap: 8rem;
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a > span {
+    margin-right: 0.5em;
+    font-weight: 700;
+}
+
+.underline-indicators > *{
+    border-bottom: .2rem solid hsl(var(--clr-white)/0);
+    padding: var(--underline-gap, 1em) 0;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus,
+.underline-indicators > .hover {
+    border-bottom: .2rem solid hsl(var(--clr-white)/.5);
+}
+
+.underline-indicators > .active {
+    border-bottom: .2rem solid hsl(var(--clr-white)/ 1);
+}
