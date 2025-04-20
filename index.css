@@ -243,6 +243,8 @@ select {
 }
 
 .underline-indicators > *{
+    cursor: pointer;
+    border: none;
     border-bottom: .2rem solid hsl(var(--clr-white)/0);
     padding: var(--underline-gap, 1em) 0;
 }
@@ -250,9 +252,33 @@ select {
 .underline-indicators > *:hover,
 .underline-indicators > *:focus,
 .underline-indicators > .hover {
-    border-bottom: .2rem solid hsl(var(--clr-white)/.5);
+    border-color: hsl(var(--clr-white)/.5);
 }
 
-.underline-indicators > .active {
-    border-bottom: .2rem solid hsl(var(--clr-white)/ 1);
+.underline-indicators > .active,
+.underline-indicators > *:active,
+.underline-indicators > [aria-selected="true"] {
+    border-color: hsl(var(--clr-white)/ 1);
+}
+
+.tab-list > * {
+    --gap: 2rem;
+}
+
+.dot-indicators > * {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: .5em;
+    background-color: hsl(var(--clr-white)/.25);
+}
+
+.dot-indicators > *:hover,
+.dot-indicators > *:focus {
+    background-color: hsl(var(--clr-white)/.5);
+}
+
+.dot-indicators > [aria-selected="true"] {
+    background-color: hsl(var(--clr-white)/ 1);
 }
