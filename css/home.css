@@ -1,0 +1,23 @@
+.home {
+    background: url("/assets/home/background-home-desktop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.logo {
+    padding: 0 4rem;
+}
+
+.primary-navigation {
+    padding: 0 4rem;
+    background-color: hsl(var(--clr-white)/.05);
+    backdrop-filter: blur(80px);
+}
